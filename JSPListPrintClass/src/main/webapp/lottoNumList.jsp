@@ -102,7 +102,6 @@ h2 {
         lotto = new LottoNum("916회", 9, 21, 22, 32, 35, 36, 17);
         lottoList.add(lotto);
 
-        String contextPath = request.getContextPath();
         
         for (int i = 0; i < lottoList.size(); i++) {
             LottoNum lottoNums = lottoList.get(i);
@@ -110,14 +109,14 @@ h2 {
             <div class="time">
                 <h3><%=lottoNums.getTimes()%></h3>
                 <div>            				
-                    <img src="<%=contextPath%>/images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum1()) %>.png"> 
-                    <img src="<%=contextPath%>/images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum2()) %>.png">
-                    <img src="<%=contextPath%>/images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum3()) %>.png">
-                    <img src="<%=contextPath%>/images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum4()) %>.png">
-                    <img src="<%=contextPath%>/images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum5()) %>.png">
-                    <img src="<%=contextPath%>/images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum6()) %>.png">
+                    <img src="images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum1()) %>.png"> 
+                    <img src="images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum2()) %>.png">
+                    <img src="images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum3()) %>.png">
+                    <img src="images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum4()) %>.png">
+                    <img src="images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum5()) %>.png">
+                    <img src="images/lotto_img/ball_<%= String.format("%02d", lottoNums.getNum6()) %>.png">
                     <span class="bonus">&emsp; + 보너스번호</span>
-                    &emsp; <img src="<%=contextPath%>/images/lotto_img/ball_<%=lottoNums.getBonusNum()%>.png">
+                    &emsp; <img src="images/lotto_img/ball_<%=lottoNums.getBonusNum()%>.png">
                 </div>
             </div>
         <%
