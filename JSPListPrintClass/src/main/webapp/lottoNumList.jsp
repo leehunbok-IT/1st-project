@@ -37,12 +37,12 @@ h2 {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    background-color: #fff; /* 전체 항목의 배경색 */
+    background-color: #fff; 
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 2.5px;
-	box-shadow: 0 0 0 10px #f0f0f0; /* 바깥쪽 회색 */
-    border: 2px solid #e0e0e0; /* 외곽 테두리 */\
+	box-shadow: 0 0 0 10px #f0f0f0; 
+    border: 2px solid #e0e0e0; 
 }
 .time h3 {
     color: #3366cc;
