@@ -38,7 +38,7 @@ h2 {
 
 .time {
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 	justify-content: center;
 	align-items: center;
 	background-color: #fff;
@@ -49,13 +49,19 @@ h2 {
 	border: 2px solid #e0e0e0;
 }
 
+.time div {
+	display: flex;
+	align-items: center;
+	gap: 0px;
+}
+
 .time h3 {
 	color: #3366cc;
 	padding: 5px 15px;
 	font-size: 20px;
 	font-weight: bold;
 	margin: 0;
-	width: 90px;
+	width: 80px;
 	text-align: center;
 }
 
@@ -88,19 +94,19 @@ h2 {
 		<h2>로또 당첨 번호 리스트</h2>
 		<div class="lotto-list">
 			<%
-        ArrayList<LottoNum> lottoList = new ArrayList<>();
-        lottoList.add(new LottoNum("907회", 21, 27, 29, 38, 40, 44, 37));
-        lottoList.add(new LottoNum("908회", 3, 16, 21, 22, 23, 44, 20));
-        lottoList.add(new LottoNum("909회", 7, 24, 29, 30, 34, 35, 33));
-        lottoList.add(new LottoNum("910회", 1, 11, 17, 27, 35, 39, 31));
-        lottoList.add(new LottoNum("911회", 4, 5, 12, 14, 32, 42, 35));
-        lottoList.add(new LottoNum("912회", 5, 8, 18, 21, 22, 38, 10));
-        lottoList.add(new LottoNum("913회", 6, 14, 16, 21, 27, 37, 40));
-        lottoList.add(new LottoNum("914회", 16, 19, 24, 33, 42, 44, 27));
-        lottoList.add(new LottoNum("915회", 2, 6, 11, 13, 22, 37, 14));
-        lottoList.add(new LottoNum("916회", 9, 21, 22, 32, 35, 36, 17));
-        request.setAttribute("lottoList", lottoList);
-        %>
+			ArrayList<LottoNum> lottoList = new ArrayList<>();
+			lottoList.add(new LottoNum("907회", 21, 27, 29, 38, 40, 44, 37));
+			lottoList.add(new LottoNum("908회", 3, 16, 21, 22, 23, 44, 20));
+			lottoList.add(new LottoNum("909회", 7, 24, 29, 30, 34, 35, 33));
+			lottoList.add(new LottoNum("910회", 1, 11, 17, 27, 35, 39, 31));
+			lottoList.add(new LottoNum("911회", 4, 5, 12, 14, 32, 42, 35));
+			lottoList.add(new LottoNum("912회", 5, 8, 18, 21, 22, 38, 10));
+			lottoList.add(new LottoNum("913회", 6, 14, 16, 21, 27, 37, 40));
+			lottoList.add(new LottoNum("914회", 16, 19, 24, 33, 42, 44, 27));
+			lottoList.add(new LottoNum("915회", 2, 6, 11, 13, 22, 37, 14));
+			lottoList.add(new LottoNum("916회", 9, 21, 22, 32, 35, 36, 17));
+			request.setAttribute("lottoList", lottoList);
+			%>
 
 			<c:forEach var="lotto" items="${lottoList}">
 				<div class="time">
