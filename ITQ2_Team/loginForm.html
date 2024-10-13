@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .logo {
+      color: #F2055C;
+      font-family: "Bagel Fat One", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 70px;
+      margin: 0;
+      height: 100px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      line-height: 100px;
+    }
+    .nav-item {
+      display: flex;
+      width:50%;
+      background-color: #f0efef;
+      justify-content: center;  
+      align-items: center;  
+      border: 2px solid #f0efef;
+      border-radius: 7px 7px 0 0;
+      border-bottom: none;
+      height: 60px;  
+    }
+    .nav-tabs {
+      width: 100%;
+      height: 59px;
+      display: flex;
+      border-bottom: none;
+      background-color: #e0dede;
+      border-radius: 7px;
+    }
+    .nav-tabs .nav-link {
+      width: 100%;
+      height: 59px;
+      border: none;
+      color: #666;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .nav-tabs .nav-link.active {  
+      width: 100%;
+      background-color: white;  
+      color: #F2055C;
+      border: none;
+    }
+    .tab-content{
+      border: 2px solid #f0efef;
+      border-radius: 0 0 7px 7px;
+      background-color: white;
+      border-top: none;
+      padding: 50px;
+    }
+    .form-control:focus {
+      border-color: #F2055C; 
+      box-shadow: 0 0 5px rgba(242, 5, 92, 0.5); 
+      outline: none;
+    }
+    .btn-outline-danger:hover {
+      background-color: #F2055C;
+      color: white;
+    }
+    .login-footer a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #666;
+    }
+ 
+  </style>
+</head>
+<body class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-6">
+          <a href="#" class="logo mb-5"> 요기용 <a>
+          <div class="login-box">
+            <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+              <li class="nav-item col-6">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">회원</button>
+              </li>
+              <li class="nav-item col-6">
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">비회원</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <form>
+                  <div class="form-floating text-muted mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="아이디">
+                    <label for="floatingInput">아이디</label>
+                  </div>
+                  <div class="form-floating text-muted mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="비밀번호">
+                    <label for="floatingPassword">비밀번호</label>
+                  </div>
+                  <button type="submit" class="btn btn-outline-danger w-100">로그인</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <form>
+                  <div class="form-floating text-muted mb-3">
+                    <input type="password" class="form-control" id="floatingOTP" placeholder="1회용 비밀번호">
+                    <label for="floatingOTP">1회용 비밀번호</label>
+                  </div>
+                  <button type="submit" class="btn btn-outline-danger w-100">로그인</button>
+                </div>
+                </form>
+          </div>
+          <div class="login-footer mt-3">
+            <a href="#" class="p-2">비밀번호 찾기</a>
+            <a class="p-1">|</a>
+            <a href="#" class="p-2">아이디 찾기</a>
+            <a class="p-1">|</a>
+            <a href="#" class="p-2">회원가입</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
